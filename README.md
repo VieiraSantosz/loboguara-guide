@@ -15,4 +15,4 @@ Lobo Guará (Cyber Threat Intelligence)
 
 ## 📌 Como instalar o Lobo Guará?
 
-Siga as instruções no arquivo [install-guide.md]() para realizar a instalação passo a passo.
+Siga as instruções no arquivo [install-guide.md](https://github.com/VieiraSantosz/loboguara-guide/blob/main/install-guide.md) para realizar a instalação passo a passo.
