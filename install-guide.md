@@ -230,24 +230,35 @@ nano server/app/config.py
 ![image](https://github.com/user-attachments/assets/effe36c2-70fe-495b-bb53-2fc906439546)
 
 
-Nessa parte, será configurada as seguintes variáveis:
+Dentro do arquivo, você precisará configurar as seguintes variáveis:
 
-- SECRET_KEY
-- SQLALCHEMY_DATABASE_URI
-- API_ACCESS_TOKEN
+- **SECRET_KEY** 
+- **SQLALCHEMY_DATABASE_URI**
+- **API_ACCESS_TOKEN**
 
-Em SECRET_KEY, gere uma chave secreta segura, nesse guia será usado a chave yS1[t4l6k+
+**SECRET_KEY**
 
-Na SQLALCHEMY_DATABASE_URI, será configurado o acesso ao banco de dados, no seguinte script que vem por padrão:
-'postgresql://guarauser:YOUR_PASSWORD_HERE@localhost/guaradb?ssl mode=disable'.
+Usada para criptografar sessões e outros dados sensíveis. É fundamental que você gere uma chave secreta forte e única
 
-Substitua YOUR_PASSWORD_HERE pela senha criada para seu banco de dados.
+**SQLALCHEMY_DATABASE_URI**
 
-Já a API_ACCESS_TOKEN é possível obtê-la criando uma conta na própria plataforma do Lobo Guará no seguinte site:
+Define a URI de conexão com o banco de dados. Por padrão, ela está configurada da seguinte maneira:
+```bash
+'postgresql://guarauser:YOUR_PASSWORD_HERE@localhost/guaradb?sslmode=disable'
+```
+Substitua **YOUR_PASSWORD_HERE** pela senha do seu banco de dados PostgreSQL.
+
+**API_ACCESS_TOKEN**
+
+Para configurar o API_ACCESS_TOKEN, você precisará criar uma conta na plataforma Lobo Guará. Acesse o site oficial e faça o login:
 
 https://loboguara.olivsec.com.br/login?next=%2F
 
-Após fazer os ajustes nas variáveis ficará da seguinte forma:
+Após o login, você poderá obter o seu token de acesso e adicioná-lo na variável **API_ACCESS_TOKEN** dentro do arquivo config.py.
+
+**Exemplo de configuração**
+
+Após ajustar as variáveis conforme seu ambiente, o arquivo config.py ficará da seguinte maneira:
 
 ![image](https://github.com/user-attachments/assets/c77beec7-28e4-4690-9004-6ee21836a67e)
 
