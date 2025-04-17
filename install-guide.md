@@ -243,7 +243,11 @@ sudo chmod +x ./install.sh
 sudo ./install.sh
 ```
 
-Após a execução do instalador, irá aparecer a seguinte imagem e mensagem avisando que a instalação foi feita com sucesso
+Após a execução do instalador, irá aparecer a seguinte imagem e mensagem avisando que a instalação foi feita com sucesso.
+
+![image](https://github.com/user-attachments/assets/52fe13a7-fb75-45c0-82d3-8beb0988c222)
+
+![image](https://github.com/user-attachments/assets/2b96bd75-cedd-499e-8cdf-a8e43f2e0f1a)
 
 
 **2. Iniciar a aplicação**
@@ -251,6 +255,8 @@ Após a execução do instalador, irá aparecer a seguinte imagem e mensagem avi
 ```bash
 sudo -u loboguara /opt/loboguara/start.sh
 ```
+
+![image](https://github.com/user-attachments/assets/cd5b9bc0-f43f-4b17-88ea-892b843c8fa9)
 
 
 
