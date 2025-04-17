@@ -220,7 +220,7 @@ cd loboguara/
 
 ## Configurar o arquivo config.py
 
-**1. Editar o arquivo de configuraçãoy**
+**1. Editar o arquivo de configuração**
 
 Abra o arquivo config.py e ajuste as variáveis conforme seu ambiente.
 ```bash
@@ -235,10 +235,14 @@ Dentro do arquivo, você precisará configurar as seguintes variáveis:
 - **SECRET_KEY** 
 - **SQLALCHEMY_DATABASE_URI**
 - **API_ACCESS_TOKEN**
+<br>
+<br>
 
 **SECRET_KEY**
 
-Usada para criptografar sessões e outros dados sensíveis. É fundamental que você gere uma chave secreta forte e única
+Usada para criptografar sessões e outros dados sensíveis. É fundamental que você gere uma chave secreta forte e única. 
+<br>
+<br>
 
 **SQLALCHEMY_DATABASE_URI**
 
@@ -247,6 +251,8 @@ Define a URI de conexão com o banco de dados. Por padrão, ela está configurad
 'postgresql://guarauser:YOUR_PASSWORD_HERE@localhost/guaradb?sslmode=disable'
 ```
 Substitua **YOUR_PASSWORD_HERE** pela senha do seu banco de dados PostgreSQL.
+<br>
+<br>
 
 **API_ACCESS_TOKEN**
 
@@ -255,6 +261,8 @@ Para configurar o API_ACCESS_TOKEN, você precisará criar uma conta na platafor
 https://loboguara.olivsec.com.br/login?next=%2F
 
 Após o login, você poderá obter o seu token de acesso e adicioná-lo na variável **API_ACCESS_TOKEN** dentro do arquivo config.py.
+<br>
+<br>
 
 **Exemplo de configuração**
 
@@ -288,6 +296,17 @@ sudo -u loboguara /opt/loboguara/start.sh
 ```
 
 ![image](https://github.com/user-attachments/assets/cd5b9bc0-f43f-4b17-88ea-892b843c8fa9)
+
+
+## Primeiro acesso à plataforma
+
+**1. Acessar a interface web**
+
+Abra o navegador e acesse a interface web do Lobo Guará utilizando o IP da sua máquina seguido da porta 7405.
+```bash
+http://<IP-do-Servidor:7405>
+```
+
 
 
 
