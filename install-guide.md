@@ -33,12 +33,14 @@ sudo apt update && sudo apt upgrade -y
 
 **2. Instalar o pré-requisito para adicionar PPAS personalizados**
 
+Este pacote permite adicionar novos repositórios ao APT.
 ```bash
 sudo apt install software-properties-common -y
 ```
 
-**3. Adicionar o deadsnakes PPA à lista de fontes de gerenciamento de pacotes APT**
+**3. Adicionar o repositório deadsnakes**
 
+Esse repositório contém versões mais recentes do Python.
 ```bash
 add-apt-repository ppa:deadsnakes/ppa
 ```
@@ -49,33 +51,38 @@ add-apt-repository ppa:deadsnakes/ppa
 Pressione a tecla **ENTER** para continuar a instalação.
 
 
-**4. Atualizar a lista de pacotes disponíveis**
+**4. Atualizar a lista de pacotes novamente**
 
+Atualize o cache de pacotes do sistema após adicionar o novo repositório.
 ```bash
 sudo apt update && sudo apt upgrade -y
 ```
 
 **5. Instalar o Python 3.12**
 
+Instala a versão necessária do Python para o projeto.
 ```bash
 sudo apt install python3.12 -y
 ```
 
 **6. Instalar o PIP, pois não vem instalado por padrão**
 
+O gerenciador de pacotes Python não vem por padrão nessa versão, então é necessário instalá-lo manualmente.
 ```bash
 curl -sS https://bootstrap.pypa.io/get-pip.py | python3.12
 ```
 
 **7. Instalar as dependências do Python**
 
+Esses pacotes são importantes para ambientes virtuais e desenvolvimento.
 ```bash
 sudo apt-get install python3.12 python3.12-venv python3.12-dev -y
 sudo apt update
 ```
 
-**8. Verificar se o Python 3.12 foi instalado corretamente**
+**8. Verificar a versão do Python**
 
+Confirme se o Python 3.12 foi instalado com sucesso.
 ```bash
 python3.12 --version
 ```
@@ -83,30 +90,32 @@ python3.12 --version
 
 ## Instalação e Configuração do PostgreSQL
 
-**Nota:** para fazer a instalação e a configuração do PostgreSQL, faça no diretório raiz.
+**Nota:** É recomendado realizar as ações administrativas a partir do diretório raiz.
 ```bash
 cd /
 ```
 
 **1. Instalar o PostgreSQL**
 
+Instala o banco de dados relacional necessário para o Lobo Guará.
 ```bash
 sudo apt install postgresql postgresql-contrib -y
 ```
 
-**2. Criar o banco de dados e o usuário no PostgreSQL**
+**2. Criar banco de dados e usuário**
 
-**Nota:** O nome do banco de dados vai se chamar **guaradb** e usuário do banco de dados vai se chamar **guarauser**.
+Cria o banco guaradb e o usuário guarauser com uma senha segura.
 
-Em **your_password**, coloque uma senha segura para acessar o banco de dados guaradb.
+**Nota:** Em **your_password**, coloque uma senha segura para acessar o banco de dados guaradb.
 
 ```bash
 sudo -u postgres psql -c "CREATE DATABASE guaradb;"
 sudo -u postgres psql -c "CREATE USER guarauser WITH PASSWORD 'your_password';"
 ```
 
-**3. Conceder as permissões necessárias para o usuário guarauser**
+**3. Conceder permissões ao usuário**
 
+Dá ao usuário todas as permissões necessárias no banco.
 ```bash
 sudo -u postgres psql -c "GRANT ALL PRIVILEGES ON DATABASE guaradb TO guarauser;" && \
 sudo -u postgres psql -d guaradb -c "ALTER SCHEMA public OWNER TO guarauser;" && \
@@ -122,6 +131,7 @@ sudo -u postgres psql -d guaradb -c "ALTER DEFAULT PRIVILEGES IN SCHEMA public G
 
 **4. Criar extensão de indexação**
 
+Essa extensão melhora a performance de buscas por similaridade textual.
 ```bash
 sudo -u postgres psql -d guaradb -c "CREATE EXTENSION IF NOT EXISTS pg_trgm;"
 ```
@@ -129,8 +139,9 @@ sudo -u postgres psql -d guaradb -c "CREATE EXTENSION IF NOT EXISTS pg_trgm;"
 
 ## Instalar e Configurar Redis
 
-**1. O Redis é necessário para algumas funcionalidades do sistema**
+**1. Instalar o Redis**
 
+O Redis é necessário para operações assíncronas e cache.
 ```bash
 sudo apt install redis-server -y
 sudo systemctl start redis-server
@@ -140,24 +151,27 @@ sudo systemctl enable redis-server
 
 ## Instalar Git
 
-**1. O Git é necessário para clonar o repositório Lobo Guará**
+**1. Instalar Git**
 
+O Git é usado para clonar o repositório da aplicação.
 ```bash
 sudo apt install git -y
 ```
 
 ## Instalar ferramentas de desenvolvimento
 
-**1. Instalar o build-essential e o zip, que são usados para compilar e descompactar pacotes**
+**1. Instalar pacotes essenciais**
 
+Necessários para compilar pacotes nativos e lidar com arquivos comprimidos.
 ```bash
 sudo apt install build-essential zip -y
 ```
 
-## Instalar Google Chrome e ChromeDriver (versão 131.0.6778.69)
+## Instalar Google Chrome e ChromeDriver
 
-**1. Google Chrome e ChromeDriver são necessários para funcionalidades de automação dentro do Lobo Guará**
+**1. Instalar o Chrome e o driver compatível**
 
+Esses componentes são usados por funcionalidades de automação da plataforma.
 ```bash
 sudo mkdir -p /opt/loboguara/bin/
 wget -O /tmp/google-chrome.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
@@ -170,10 +184,11 @@ sudo chmod +x /opt/loboguara/bin/chromedriver_dir/chromedriver
 sudo ln -sf /opt/loboguara/bin/chromedriver_dir/chromedriver /opt/loboguara/bin/chromedriver
 ```
 
-## Instalar Subfinder (versão 2.6.6)
+## Instalar Subfinder
 
-**1. O Subfinder é uma ferramenta de descoberta de subdomínios**
+**1. Instalar o Subfinder**
 
+Ferramenta utilizada para encontrar subdomínios de forma automatizada.
 ```bash
 sudo wget -O /tmp/subfinder.zip https://github.com/projectdiscovery/subfinder/releases/download/v2.6.6/subfinder_2.6.6_linux_amd64.zip
 sudo unzip /tmp/subfinder.zip -d /tmp/
@@ -183,8 +198,9 @@ sudo chmod +x /opt/loboguara/bin/subfinder
 
 ## Instalar FFUF
 
-**1. O FFUF é utilizado para fuzzing de URL e diretórios**
+**1. Instalar o FFUF**
 
+Usado para fuzzing de diretórios e rotas em aplicações web.
 ```bash
 sudo wget -O /tmp/ffuf.tar.gz https://github.com/ffuf/ffuf/releases/download/v2.0.0/ffuf_2.0.0_linux_amd64.tar.gz
 sudo tar -xvzf /tmp/ffuf.tar.gz -C /tmp/
@@ -194,8 +210,9 @@ sudo chmod +x /opt/loboguara/bin/ffuf
 
 ## Clonar o Repositório Lobo Guará
 
-**1. Agora, baixe o projeto Lobo Guará diretamente do GitHub**
+**1. Clonar o repositório**
 
+Baixa o código-fonte do projeto para seu servidor.
 ```bash
 git clone https://github.com/olivsec/loboguara.git
 cd loboguara/
@@ -203,8 +220,9 @@ cd loboguara/
 
 ## Configurar o arquivo config.py
 
-**1. No diretório loboguara você encontrará o arquivo de configuração em server/app/config.py**
+**1. Editar o arquivo de configuraçãoy**
 
+Abra o arquivo config.py e ajuste as variáveis conforme seu ambiente.
 ```bash
 nano server/app/config.py
 ```
@@ -236,8 +254,9 @@ Após fazer os ajustes nas variáveis ficará da seguinte forma:
 
 ## Executar o instalador
 
-**1. Depois de configurar o arquivo config.py, execute o script install.sh para concluir a instalação**
+**1. Executar o script de instalação**
 
+Concede permissão de execução e inicia o processo automatizado.
 ```bash
 sudo chmod +x ./install.sh
 sudo ./install.sh
@@ -252,6 +271,7 @@ Após a execução do instalador, irá aparecer a seguinte imagem e mensagem avi
 
 **2. Iniciar a aplicação**
 
+Após a instalação, inicie o serviço manualmente.
 ```bash
 sudo -u loboguara /opt/loboguara/start.sh
 ```
