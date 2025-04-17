@@ -209,6 +209,9 @@ cd loboguara/
 nano server/app/config.py
 ```
 
+![image](https://github.com/user-attachments/assets/effe36c2-70fe-495b-bb53-2fc906439546)
+
+
 Nessa parte, será configurada as seguintes variáveis:
 
 - SECRET_KEY
