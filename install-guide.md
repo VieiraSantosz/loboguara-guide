@@ -231,6 +231,8 @@ https://loboguara.olivsec.com.br/login?next=%2F
 
 Após fazer os ajustes nas variáveis ficará da seguinte forma:
 
+![image](https://github.com/user-attachments/assets/9846dad8-90b4-4f97-842e-f736f3644474)
+
 
 ## Executar o instalador
 
