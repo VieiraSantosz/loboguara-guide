@@ -13,10 +13,13 @@ Lobo Guará (Cyber Threat Intelligence)
 
 </h4>
 
-## 📌 Como instalar o Grafana?
+## 📌 Como instalar o Lobo Guará?
 
-Existem duas formas de realizar a instalação:
+## Pré-Requisitos
 
-**1. Instalação manual:** Siga as instruções no arquivo [install-guide.md](https://github.com/VieiraSantosz/grafana-guide/blob/main/install-guide.md) para realizar a instalação passo a passo.
+Antes de iniciar a instalação, verifique se o seu servidor atende aos seguintes requisitos:
 
-**2. Usando script:** Acesse a pasta [script](https://github.com/VieiraSantosz/grafana-guide/tree/main/script), faça o download do script install_grafana.sh, e siga as orientações de uso.
+- **Sistema operacional:** Ubuntu e Debian
+- **Mínimo de disco:** 32 GB
+- **Mínimo de memória RAM:** 8 GB
+- **Mínimo de CPU:** 4 CPU
