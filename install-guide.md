@@ -43,7 +43,10 @@ sudo apt install software-properties-common -y
 add-apt-repository ppa:deadsnakes/ppa
 ```
 
-Pressione a tecla **ENTER** para continuar a instalação
+![image](https://github.com/user-attachments/assets/56860a38-dd0c-4768-a224-1fc7e3b57c4d)
+
+
+Pressione a tecla **ENTER** para continuar a instalação.
 
 
 **4. Atualizar a lista de pacotes disponíveis**
@@ -187,6 +190,15 @@ sudo wget -O /tmp/ffuf.tar.gz https://github.com/ffuf/ffuf/releases/download/v2.
 sudo tar -xvzf /tmp/ffuf.tar.gz -C /tmp/
 sudo mv /tmp/ffuf /opt/loboguara/bin/
 sudo chmod +x /opt/loboguara/bin/ffuf
+```
+
+## Clonar o Repositório Lobo Guará
+
+**1. Agora, baixe o projeto Lobo Guará diretamente do GitHub**
+
+```bash
+git clone https://github.com/olivsec/loboguara.git
+cd loboguara/
 ```
 
 ## Configurar o arquivo config.py
