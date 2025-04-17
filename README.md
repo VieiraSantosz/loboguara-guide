@@ -15,11 +15,4 @@ Lobo Guará (Cyber Threat Intelligence)
 
 ## 📌 Como instalar o Lobo Guará?
 
-## Pré-Requisitos
-
-Antes de iniciar a instalação, verifique se o seu servidor atende aos seguintes requisitos:
-
-- **Sistema operacional:** Ubuntu e Debian
-- **Mínimo de disco:** 32 GB
-- **Mínimo de memória RAM:** 8 GB
-- **Mínimo de CPU:** 4 CPU
+Siga as instruções no arquivo [install-guide.md]() para realizar a instalação passo a passo.
