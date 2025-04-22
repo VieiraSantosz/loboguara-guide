@@ -150,6 +150,7 @@ sudo systemctl enable redis-server
 ```
 
 <br>
+
 ## Instalar Git
 
 **1. Instalar Git**
@@ -249,7 +250,7 @@ Dentro do arquivo, você precisará configurar as seguintes variáveis:
 - **SQLALCHEMY_DATABASE_URI**
 - **API_ACCESS_TOKEN**
 <br>
-<br>
+
 
 **SECRET_KEY**
 
