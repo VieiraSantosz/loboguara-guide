@@ -22,6 +22,7 @@ Antes de iniciar a instalação, verifique se o seu servidor atende aos seguinte
 - **Mínimo de CPU:** 4 CPU
 
 <br>
+
 ## Instalação do Python 3.12
 
 **1. Atualizar o servidor**
@@ -86,6 +87,7 @@ python3.12 --version
 ```
 
 <br>
+
 ## Instalação e Configuração do PostgreSQL
 
 **Nota:** É recomendado realizar as ações administrativas a partir do diretório raiz.
@@ -135,6 +137,7 @@ sudo -u postgres psql -d guaradb -c "CREATE EXTENSION IF NOT EXISTS pg_trgm;"
 ```
 
 <br>
+
 ## Instalar e Configurar Redis
 
 **1. Instalar o Redis**
@@ -157,6 +160,7 @@ sudo apt install git -y
 ```
 
 <br>
+
 ## Instalar ferramentas de desenvolvimento
 
 **1. Instalar pacotes essenciais**
@@ -167,6 +171,7 @@ sudo apt install build-essential zip -y
 ```
 
 <br>
+
 ## Instalar Google Chrome e ChromeDriver
 
 **1. Instalar o Chrome e o driver compatível**
@@ -185,6 +190,7 @@ sudo ln -sf /opt/loboguara/bin/chromedriver_dir/chromedriver /opt/loboguara/bin/
 ```
 
 <br>
+
 ## Instalar Subfinder
 
 **1. Instalar o Subfinder**
@@ -198,6 +204,7 @@ sudo chmod +x /opt/loboguara/bin/subfinder
 ```
 
 <br>
+
 ## Instalar FFUF
 
 **1. Instalar o FFUF**
@@ -211,6 +218,7 @@ sudo chmod +x /opt/loboguara/bin/ffuf
 ```
 
 <br>
+
 ## Clonar o Repositório Lobo Guará
 
 **1. Clonar o repositório**
@@ -222,6 +230,7 @@ cd loboguara/
 ```
 
 <br>
+
 ## Configurar o arquivo config.py
 
 **1. Editar o arquivo de configuração**
@@ -276,6 +285,7 @@ Após ajustar as variáveis conforme seu ambiente, o arquivo config.py ficará d
 
 
 <br>
+
 ## Executar o instalador
 
 **1. Executar o script de instalação**
@@ -304,6 +314,7 @@ sudo -u loboguara /opt/loboguara/start.sh
 
 
 <br>
+
 ## Primeiro acesso à plataforma
 
 **1. Acessar a interface web**
