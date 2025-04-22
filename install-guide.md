@@ -325,4 +325,27 @@ Abra o navegador e acesse a interface web do Lobo Guará utilizando o IP da sua 
 http://<IP-do-Servidor:7405>
 ```
 
+**2. Criar usuário Super Admin**
+
+Para fazer a criação do usuário **Super Admin**, abra o navegador e acesse a interface web do Lobo Guará utilizando o IP da sua máquina seguido da porta 7405 e /admin.
+```bash
+http://<IP-do-Servidor:7405/admin>
+```
+
+![image](https://github.com/user-attachments/assets/43ed3114-2601-43a7-a21d-3a17cd4da886)
+
+Para fazer a criação do **Super Admin**, é necessário criar um username, usar um email de confiança, criar uma senha segura e selecionar o fuso horário do seu local.
+
+**3. Login inicial**
+
+Utilize as credenciais que foi feita a criação do **Super Admin** para realizar o primeiro login na interface do Lobo Guará.
+
+![image](https://github.com/user-attachments/assets/2ee2c1bf-ef95-41c5-8b8d-3983ef16b1bf)
+
+**4. Após o Login**
+
+Feito seu primeiro acesso a aplicação, uma mensagem avisando que o acesso deu certo irá aparecer. Agora só usar toda a aplicação da melhor forma.
+
+![image](https://github.com/user-attachments/assets/57e2d739-40bd-4074-a16b-da4e08325538)
+
 
