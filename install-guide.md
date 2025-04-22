@@ -327,7 +327,7 @@ http://<IP-do-Servidor:7405>
 
 **2. Criar usuário Super Admin**
 
-Para configurar o primeiro usuário com privilégios de administrador **(Super Admin)**, acesse a interface de administração
+Para configurar o primeiro usuário com privilégios de administrador **(Super Admin)**, acesse a interface de administração.
 ```bash
 http://<IP-do-Servidor:7405/admin>
 ```
@@ -335,10 +335,10 @@ http://<IP-do-Servidor:7405/admin>
 ![image](https://github.com/user-attachments/assets/43ed3114-2601-43a7-a21d-3a17cd4da886)
 
 Preencha os campos obrigatórios:
-- Username: nome de usuário que será utilizado para login.
-- E-mail: utilize um e-mail válido e confiável.
-- Senha: defina uma senha segura.
--Fuso horário: escolha o fuso horário da sua região.
+- **Username:** nome de usuário que será utilizado para login.
+- **E-mail:** utilize um e-mail válido e confiável.
+- **Senha:** defina uma senha segura.
+- **Fuso horário:** escolha o fuso horário da sua região.
 
 **3. Login inicial**
 
