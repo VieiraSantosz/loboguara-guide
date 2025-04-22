@@ -21,7 +21,7 @@ Antes de iniciar a instalação, verifique se o seu servidor atende aos seguinte
 - **Mínimo de memória RAM:** 8 GB
 - **Mínimo de CPU:** 4 CPU
 
-
+<br>
 ## Instalação do Python 3.12
 
 **1. Atualizar o servidor**
@@ -47,9 +47,7 @@ add-apt-repository ppa:deadsnakes/ppa
 
 ![image](https://github.com/user-attachments/assets/56860a38-dd0c-4768-a224-1fc7e3b57c4d)
 
-
 Pressione a tecla **ENTER** para continuar a instalação.
-
 
 **4. Atualizar a lista de pacotes novamente**
 
@@ -87,7 +85,7 @@ Confirme se o Python 3.12 foi instalado com sucesso.
 python3.12 --version
 ```
 
-
+<br>
 ## Instalação e Configuração do PostgreSQL
 
 **Nota:** É recomendado realizar as ações administrativas a partir do diretório raiz.
@@ -136,7 +134,7 @@ Essa extensão melhora a performance de buscas por similaridade textual.
 sudo -u postgres psql -d guaradb -c "CREATE EXTENSION IF NOT EXISTS pg_trgm;"
 ```
 
-
+<br>
 ## Instalar e Configurar Redis
 
 **1. Instalar o Redis**
@@ -148,7 +146,7 @@ sudo systemctl start redis-server
 sudo systemctl enable redis-server
 ```
 
-
+<br>
 ## Instalar Git
 
 **1. Instalar Git**
@@ -158,6 +156,7 @@ O Git é usado para clonar o repositório da aplicação.
 sudo apt install git -y
 ```
 
+<br>
 ## Instalar ferramentas de desenvolvimento
 
 **1. Instalar pacotes essenciais**
@@ -167,6 +166,7 @@ Necessários para compilar pacotes nativos e lidar com arquivos comprimidos.
 sudo apt install build-essential zip -y
 ```
 
+<br>
 ## Instalar Google Chrome e ChromeDriver
 
 **1. Instalar o Chrome e o driver compatível**
@@ -184,6 +184,7 @@ sudo chmod +x /opt/loboguara/bin/chromedriver_dir/chromedriver
 sudo ln -sf /opt/loboguara/bin/chromedriver_dir/chromedriver /opt/loboguara/bin/chromedriver
 ```
 
+<br>
 ## Instalar Subfinder
 
 **1. Instalar o Subfinder**
@@ -196,6 +197,7 @@ sudo mv /tmp/subfinder /opt/loboguara/bin/
 sudo chmod +x /opt/loboguara/bin/subfinder
 ```
 
+<br>
 ## Instalar FFUF
 
 **1. Instalar o FFUF**
@@ -208,6 +210,7 @@ sudo mv /tmp/ffuf /opt/loboguara/bin/
 sudo chmod +x /opt/loboguara/bin/ffuf
 ```
 
+<br>
 ## Clonar o Repositório Lobo Guará
 
 **1. Clonar o repositório**
@@ -218,6 +221,7 @@ git clone https://github.com/olivsec/loboguara.git
 cd loboguara/
 ```
 
+<br>
 ## Configurar o arquivo config.py
 
 **1. Editar o arquivo de configuração**
@@ -271,6 +275,7 @@ Após ajustar as variáveis conforme seu ambiente, o arquivo config.py ficará d
 ![image](https://github.com/user-attachments/assets/c77beec7-28e4-4690-9004-6ee21836a67e)
 
 
+<br>
 ## Executar o instalador
 
 **1. Executar o script de instalação**
@@ -298,6 +303,7 @@ sudo -u loboguara /opt/loboguara/start.sh
 ![image](https://github.com/user-attachments/assets/cd5b9bc0-f43f-4b17-88ea-892b843c8fa9)
 
 
+<br>
 ## Primeiro acesso à plataforma
 
 **1. Acessar a interface web**
@@ -306,24 +312,5 @@ Abra o navegador e acesse a interface web do Lobo Guará utilizando o IP da sua 
 ```bash
 http://<IP-do-Servidor:7405>
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
