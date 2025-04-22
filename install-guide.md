@@ -353,3 +353,11 @@ Após o login, uma mensagem de boas-vindas confirmará que o acesso foi bem-suce
 ![image](https://github.com/user-attachments/assets/57e2d739-40bd-4074-a16b-da4e08325538)
 
 
+## Solução de Problemas
+Caso a instalação não tenha ocorrido conforme esperado, verifique o seguinte:
+
+- **Falha na conexão com a internet:** Verifique se sua conexão está funcionando corretamente e se o servidor pode acessar repositórios como o do Python, Chrome, ou Subfinder.
+- **Acesso à interface web:** Se você não consegue acessar a interface web, verifique se a porta 7405 está aberta no firewall do servidor.
+- **Banco de dados não conecta:** Se a aplicação não consegue acessar o PostgreSQL, revise as configurações do config.py e verifique se o banco, usuário e senha estão corretos.
+- **Problemas com Redis:** O Redis precisa estar em execução para que a aplicação funcione corretamente.
+- **API_ACCESS_TOKEN inválido:** Se funcionalidades dependentes de API não funcionarem, gere um novo token no painel do Lobo Guará e atualize o config.py.
