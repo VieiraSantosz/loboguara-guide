@@ -352,6 +352,7 @@ Após o login, uma mensagem de boas-vindas confirmará que o acesso foi bem-suce
 
 ![image](https://github.com/user-attachments/assets/57e2d739-40bd-4074-a16b-da4e08325538)
 
+<br>
 
 ## Solução de Problemas
 Caso a instalação não tenha ocorrido conforme esperado, verifique o seguinte:
