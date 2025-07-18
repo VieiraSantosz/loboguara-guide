@@ -333,6 +333,8 @@ Preencha os campos obrigatórios:
 - **Senha:** defina uma senha segura.
 - **Fuso horário:** escolha o fuso horário da sua região.
 
+Após preencher cada campo, clique em **Register Superadmin** para fazer a criação do super admin. 
+
 **3. Login inicial**
 
 Com o usuário criado, volte à interface principal e realize o login com as credenciais criadas.
