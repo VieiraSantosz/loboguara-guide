@@ -64,14 +64,7 @@ Instala a versão necessária do Python para o projeto.
 sudo apt install python3.12 -y
 ```
 
-**6. Instalar o PIP, pois não vem instalado por padrão**
-
-O gerenciador de pacotes Python não vem por padrão nessa versão, então é necessário instalá-lo manualmente.
-```bash
-curl -sS https://bootstrap.pypa.io/get-pip.py | python3.12
-```
-
-**7. Instalar as dependências do Python**
+**6. Instalar as dependências do Python**
 
 Esses pacotes são importantes para ambientes virtuais e desenvolvimento.
 ```bash
@@ -79,7 +72,7 @@ sudo apt-get install python3.12 python3.12-venv python3.12-dev -y
 sudo apt update
 ```
 
-**8. Verificar a versão do Python**
+**7. Verificar a versão do Python**
 
 Confirme se o Python 3.12 foi instalado com sucesso.
 ```bash
