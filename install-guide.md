@@ -337,7 +337,7 @@ Após preencher cada campo, clique em **Register Superadmin** para fazer a cria�
 
 **3. Login inicial**
 
-Criado a conta de super admin, a aplicação irá voltar para a tela de login, avisando que a conta foi criado com sucesso. Após isso, realize o login com as credenciais criadas para acessar a aplicação.
+Após a criação da conta de super administrador, a aplicação retornará à tela de login, informando que a conta foi criada com sucesso. Em seguida, faça o login utilizando as credenciais recém-criadas para acessar a aplicação.
 
 ![image](https://github.com/user-attachments/assets/2ee2c1bf-ef95-41c5-8b8d-3983ef16b1bf)
 
